@@ -1,0 +1,5 @@
+cd dir1
+find . -type f -exec test ! -e ../dir2{} \; -print
+cd ..
+cd dir2
+find . -type f -exec test ! -e ../dir1{} \; -print
